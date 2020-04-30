@@ -4,17 +4,17 @@ Menu::Menu(Snake &snake):snake(snake){
 
     this->difficulty=0;
 
-    menuT.loadFromFile("C:/Users/USER/Desktop/snake texture old/Menu/background-menu.png");
-    diffT.loadFromFile("C:/Users/USER/Desktop/snake texture old/Menu/back-difficulty1.png");
-    menuST.loadFromFile("C:/Users/USER/Desktop/snake texture old/Menu/Start Game.png");
-    menuBT.loadFromFile("C:/Users/USER/Desktop/snake texture old/Menu/Best scores.png");
-    menuCT.loadFromFile("C:/Users/USER/Desktop/snake texture old/Menu/Creators.png");
-    menuQT.loadFromFile("C:/Users/USER/Desktop/snake texture old/Menu/Quit.png");
-    diffET.loadFromFile("C:/Users/USER/Desktop/snake texture old/Menu/Easy.png");
-    diffNT.loadFromFile("C:/Users/USER/Desktop/snake texture old/Menu/Normal.png");
-    diffHT.loadFromFile("C:/Users/USER/Desktop/snake texture old/Menu/Hard.png");
-    creatorT.loadFromFile("C:/Users/USER/Desktop/snake texture old/creator.png");
-    youLoseT.loadFromFile("C:/Users/USER/Desktop/snake texture old/lose.png");
+    menuT.loadFromFile("background-menu.png");
+    diffT.loadFromFile("back-difficulty1.png");
+    menuST.loadFromFile("Start Game.png");
+    menuBT.loadFromFile("Best scores.png");
+    menuCT.loadFromFile("Creators.png");
+    menuQT.loadFromFile("Quit.png");
+    diffET.loadFromFile("Easy.png");
+    diffNT.loadFromFile("Normal.png");
+    diffHT.loadFromFile("Hard.png");
+    creatorT.loadFromFile("creator.png");
+    youLoseT.loadFromFile("lose.png");
 
     menu.setTexture(menuT);
     diff.setTexture(diffT);
@@ -193,16 +193,16 @@ void Menu::game(){
 
 
     sf::Font font;
-    font.loadFromFile("C:/Users/USER/Desktop/snake texture old/RAVIE.TTF");
+    font.loadFromFile("RAVIE.TTF");
     sf::Text scoreout;
     scoreout.setFont(font);
     scoreout.setColor(sf::Color::Red);
     scoreout.setPosition(snake.widthX/2-32,16);
 
     sf::Texture headT, backT, fruitT;
-    headT.loadFromFile("C:/Users/USER/Desktop/snake texture old/red.png");
-    backT.loadFromFile("C:/Users/USER/Desktop/snake texture old/background.png");
-    fruitT.loadFromFile("C:/Users/USER/Desktop/snake textures ksu/fruit.png");
+    headT.loadFromFile("red.png");
+    backT.loadFromFile("background.png");
+    fruitT.loadFromFile("fruit.png");
 
     sf::Sprite head(headT);
     head.scale(4.f,4.f);
